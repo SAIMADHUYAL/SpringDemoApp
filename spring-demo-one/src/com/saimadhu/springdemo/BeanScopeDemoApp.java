@@ -16,6 +16,18 @@ public class BeanScopeDemoApp {
 		Coach theCoach = context.getBean("myCoach",Coach.class);
 		
 		Coach alphaCoach = context.getBean("myCoach",Coach.class);
+		
+		//check if they both are equal
+		
+		boolean result = (theCoach==alphaCoach);
+		
+		System.out.println("/nPointing to the Same object:"+ result);
+		
+		System.out.println("/nMemoery location for theCoach"+ theCoach);
+		
+		System.out.println("/nMemoery location for alphaCoach"+ alphaCoach);
+		
+		
 
 	}
 
