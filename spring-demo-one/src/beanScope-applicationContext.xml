@@ -10,7 +10,7 @@
     <!-- Define your beans here -->
     
    <bean id= "myCoach"
-   		class="com.saimadhu.springdemo.trackCoach">
+   		class="com.saimadhu.springdemo.trackCoach" scope="prototype">
    		
    		<property name="message" value="This is a bean property"/>
    </bean>
